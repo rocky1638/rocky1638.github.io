@@ -1,6 +1,8 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+// background texture
 body {
   mix-blend-mode: darken;
   background-image: url("/static/texture2-25.png");
@@ -12,6 +14,7 @@ body {
   mix-blend-mode: normal;
 }
 
+// text wrapping
 h1,
 h2,
 h3,
@@ -19,6 +22,10 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+}
+
+p, ul, text, a, tr, td, li, ol, ul {
+  text-wrap: pretty;
 }
 
 .content-meta {
