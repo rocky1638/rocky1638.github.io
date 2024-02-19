@@ -9,6 +9,8 @@ supports:
 enemies:
 ---
 
+![[doodle-garden.png]]
+
 Welcome to my digital garden!
 
 I’m currently primarily interested in studying how large distributed systems function, and as such a lot of my recent notes are on the subject. Check out my learnings and notes on [[system-design]].
