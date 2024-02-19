@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"id":"b214ca1b3b52a75a","x":-753,"y":-550,"width":400,"height":400,"type":"file","file":"serializability.md"},
+		{"id":"244f9270299a8202","x":-1148,"y":1,"width":400,"height":400,"type":"file","file":"repeatable-read.md"},
+		{"id":"b9c8fc11b32fcee4","x":-386,"y":1,"width":400,"height":400,"type":"file","file":"snapshot-isolation.md"},
+		{"id":"26310438536f9de7","x":-1149,"y":548,"width":400,"height":400,"type":"file","file":"read-committed.md"},
+		{"id":"2a3f0a435e7a69b4","x":-1149,"y":1066,"width":400,"height":400,"type":"file","file":"read-uncommitted.md"},
+		{"id":"78a2043889b8c8f0","x":304,"y":-550,"width":400,"height":400,"type":"file","file":"strong-consistency.md"},
+		{"id":"8cecda16fe42f20d","x":306,"y":-71,"width":400,"height":400,"type":"file","file":"causal-consistency.md"},
+		{"id":"efd801bef9aaddff","x":307,"y":428,"width":400,"height":400,"type":"file","file":"eventual-consistency.md"},
+		{"id":"134e5140aa94993c","x":-186,"y":-1140,"width":400,"height":400,"type":"file","file":"strict-serializability.md"}
+	],
+	"edges":[
+		{"id":"e4ed0d7cde199dc1","fromNode":"78a2043889b8c8f0","fromSide":"bottom","toNode":"8cecda16fe42f20d","toSide":"top"},
+		{"id":"c3a6d2656ab02208","fromNode":"8cecda16fe42f20d","fromSide":"bottom","toNode":"efd801bef9aaddff","toSide":"top"},
+		{"id":"165a54488bd21297","fromNode":"b214ca1b3b52a75a","fromSide":"bottom","toNode":"244f9270299a8202","toSide":"top"},
+		{"id":"222985b0d247ac2f","fromNode":"b214ca1b3b52a75a","fromSide":"bottom","toNode":"b9c8fc11b32fcee4","toSide":"top"},
+		{"id":"742577af26830c82","fromNode":"244f9270299a8202","fromSide":"bottom","toNode":"26310438536f9de7","toSide":"top"},
+		{"id":"67d26696a5556446","fromNode":"26310438536f9de7","fromSide":"bottom","toNode":"2a3f0a435e7a69b4","toSide":"top"},
+		{"id":"81c12379b2fed42a","fromNode":"134e5140aa94993c","fromSide":"bottom","toNode":"b214ca1b3b52a75a","toSide":"top"},
+		{"id":"6e845537ebcd8fb3","fromNode":"134e5140aa94993c","fromSide":"bottom","toNode":"78a2043889b8c8f0","toSide":"top"}
+	]
+}
