@@ -1,4 +1,5 @@
 ---
+title: "korean grammar learnings"
 created_at: 2024-01-26
 type:
 aliases: 
@@ -7,8 +8,6 @@ children:
 supports: 
 enemies:
 ---
-
-# korean grammar learnings
 
 - N) + (이)나
     - used as “or” between two nouns.

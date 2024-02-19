@@ -29,12 +29,13 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+  letter-spacing: 0.025rem;
 }
 
 p, ul, text, a, tr, td, li, ol, ul {
   text-wrap: pretty;
 }
 
-.content-meta {
+.content-meta, p.meta {
   font-family: "Caveat";
 }

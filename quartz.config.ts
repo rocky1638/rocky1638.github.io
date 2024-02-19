@@ -18,10 +18,11 @@ const config: QuartzConfig = {
       cdnCaching: true,
       typography: {
         // header: "Schibsted Grotesk",
-        header: "Annapurna SIL",
+        header: "DM Serif Display",
         // body: "Source Sans Pro",
-        body: "Rubik",
-        code: "IBM Plex Mono",
+        // body: "Rubik",
+        body: "Onest",
+        code: "Jetbrains Mono",
       },
       colors: {
         lightMode: {
