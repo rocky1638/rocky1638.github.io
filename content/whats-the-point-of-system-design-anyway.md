@@ -2,11 +2,10 @@
 created_at: 2024-01-26
 type: writing
 aliases: 
+title: "what's the point of system design anyway?"
 parents:
   - "[[designing-data-intensive-applications|ddia]]"
 ---
-
-# What’s the point of system design anyway?
 
 The question we want to answer:
 
