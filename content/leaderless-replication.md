@@ -53,7 +53,8 @@ Although this is mathematically solid, there are still some issues that can aris
 
 ### sloppy quorum
 
-- in even bigger systems, each value could have a set of $n$ nodes in which its stored, even if there are more than $n$ total replicas.
-	- in downtime, the home nodes may be unaccessable while other nodes still are.
-	- these nodes can pick up the slack and then share the data back to home nodes after they’re back up.
-	- just more write availability and durability, but doesn’t give quorum consistency
+Another issue that can occur with strict quorums is when a network interruption cuts off a client from a large number of its “home nodes” (the $n$ nodes that are managing the client’s reads and writes).
+
+In this situation, without intervention, the client would need to wait until the network fault ended. This is why we use **sloppy quorums.**
+
+We can give up guarantees of consistency for eventual consistency but improve availability if we allow nodes that aren’t normally a part of the $n$ home nodes for a user to vote in and accept reads and writes for a client. Eventually, the data will make it back to the $n$ home nodes.
