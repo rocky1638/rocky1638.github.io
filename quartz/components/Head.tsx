@@ -15,6 +15,7 @@ export default (() => {
     const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!)
 
     const iconPath = joinSegments(baseDir, "static/icon.png")
+    // TODO: change this
     const ogImagePath = `https://${cfg.baseUrl}/static/og-image.png`
 
     return (
