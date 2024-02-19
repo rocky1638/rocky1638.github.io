@@ -32,14 +32,14 @@ See [[log-based-storage#optimizations]] for details on how SSTable reads and sto
 
 ## pros
 
-- [p] Can be stored on disk.
-- [p] Faster writes than b-trees because we first write to memory.
+- Can be stored on disk.
+- Faster writes than b-trees because we first write to memory.
 
 ## cons
 
-- [c] Range queries require searching through LSM tree and all SSTables.
+- Range queries require searching through LSM tree and all SSTables.
 	- This is still faster than hash indexes, because the tree and tables are all sorted.
-- [c] Compaction in the background requires extra CPU usage.
+- Compaction in the background requires extra CPU usage.
 
 ## optimizations
 

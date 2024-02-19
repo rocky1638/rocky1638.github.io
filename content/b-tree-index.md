@@ -17,15 +17,15 @@ Each non-leaf page contains pointers to its children, which are narrowed-down pa
 
 ![[b-tree-diagram.png|Figure 1: An example of looking up a key in a b-tree.]]
 
-#### pros
+## pros
 
-- [p] Can be stored on disk.
+- Can be stored on disk.
 
-#### cons
+## cons
 
-- [c] Navigating between pages involves jumping around on the disk (lack of locality).
+- Navigating between pages involves jumping around on the disk (lack of locality).
 	- This is still much faster than $O(n)$ sequential scans as datasets increase in size.
-- [c] Writing new datapoints can be complicated, as it can requiring fixing-up if the new datapoint causes a page to be split.
+- Writing new datapoints can be complicated, as it can requiring fixing-up if the new datapoint causes a page to be split.
 	- We will have to split upwards until we reach a page with free space _(this is because a single pointer which used to reference one child page now needs room for two pointers to reference two children)._
 
 ## references

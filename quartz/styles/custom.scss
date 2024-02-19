@@ -1,6 +1,26 @@
 @use "./base.scss";
 
 // put your custom CSS here!
-h1, h2, h3, h4, h5, h6 {
+body {
+  mix-blend-mode: darken;
+  background-image: url("/static/texture2-25.png");
+  background-repeat: repeat-y;
+}
+
+[saved-theme=dark] body {
+  background-image: none;
+  mix-blend-mode: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
+}
+
+.content-meta {
+  font-family: "Caveat";
 }

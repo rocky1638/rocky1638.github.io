@@ -31,11 +31,11 @@ db_get () {
 
 ## pros
 
-- [p] Writes will always be $O(1)$ because all we’re doing is appending to the end of a file.
+- Writes will always be $O(1)$ because all we’re doing is appending to the end of a file.
 
 ## cons
 
-- [c] Reads become $O(n)$ and very slow as the log grows.
+- Reads become $O(n)$ and very slow as the log grows.
 	- To improve performance, we need to use [[database-index|indexes]].
 
 ## optimizations

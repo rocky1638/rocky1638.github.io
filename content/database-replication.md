@@ -44,13 +44,13 @@ Synchronous replication waits for all followers to update themselves with a writ
 
 #### pros
 
-- [p] All followers are guaranteed to have up-to-date data, even if the leader fails.
-- [p] Reads are fast.
+- All followers are guaranteed to have up-to-date data, even if the leader fails.
+- Reads are fast.
 
 #### cons
 
-- [c] Writes are significantly slowed down, as all followers must update before the write completes.
-- [c] Writes are blocked if any followers are down.
+- Writes are significantly slowed down, as all followers must update before the write completes.
+- Writes are blocked if any followers are down.
 
 ### asynchronous replication
 

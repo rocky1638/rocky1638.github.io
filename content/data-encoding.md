@@ -19,10 +19,10 @@ Human-readable formats of encoding tend to be popular as they can be understood 
 
 1. **JSON**
 	- No strict schema, so it’s flexible. Schema validation needs to be agreed upon outside of a strict schema.
-	- [p] Widely supported in the web browser space.
+	- Widely supported in the web browser space.
 2. **XML**
-	- [c] Not very popular in newer technologies anymore.
-	- [c] Not binary encoded, but still hard to read due to verbosity.
+	- Not very popular in newer technologies anymore.
+	- Not binary encoded, but still hard to read due to verbosity.
 
 ## binary formats
 

@@ -15,14 +15,14 @@ parents:
 
 ## pros
 
-- [p] schemas are typically not explicitly defined at write-time, so they are enforced by the application code at read-time.
-- [p] better [[locality]], because data is [[denormalization|denormalized]].
+- schemas are typically not explicitly defined at write-time, so they are enforced by the application code at read-time.
+- better [[locality]], because data is [[denormalization|denormalized]].
 	- this, in turn, leads to better performance when compared to [[relational-databases]].
 
 ## cons
 
-- [c] depending on how documents are stored, any change might require a complete rewrite of the document on the disk.
-- [c] support for joins (especially many-to-many relationships) is weak _(this goes hand-in-hand with denormalization)._
+- depending on how documents are stored, any change might require a complete rewrite of the document on the disk.
+- support for joins (especially many-to-many relationships) is weak _(this goes hand-in-hand with denormalization)._
 
 ## use-cases
 

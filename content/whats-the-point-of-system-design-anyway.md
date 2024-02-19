@@ -11,11 +11,11 @@ The question we want to answer:
 
 Why does so much change when we go from showing our friends our cool side project to wanting to serve millions (or even billions) of users?
 
-# The holy trinity
+## The holy trinity
 
 Just like a classic French chicken stock needs the holy _mirepoix_ trinity of carrot, celery, and onion, our systems need a trio of **non-functional properties** in order to keep users (and developers) happy.
 
-## Reliability
+### Reliability
 
 > [!info] Definition
 > A system is **reliable** if it works under adversity.
@@ -42,7 +42,7 @@ So with all of this in mind, how do we design systems that are both reliable and
 
 Meaningful test coverage, well-abstracted code, and efficient roll-back scripts are some industry best-practices that instill trust in system [[availability]] and resilience. By working from these fundamentals, we ensure our systems avoid **failures** even when facing **faults.**
 
-## Scalability
+### Scalability
 
 A system is **scalable** if it can adequately handle increases in workload and demand.
 
@@ -62,7 +62,7 @@ When describing [[scalability]], it’s important to first understand how to des
 
 This is especially relevant in systems where multiple requests are necessary to fulfill a user’s request. If we have to wait for all the requests to complete, then the fact that most of the responses completed quickly is irrelevant. Just think back to the time when you went out to a restaurant when everyone was waiting to eat with their food in front of them while your friend Kevin was sitting there with an empty table in front of him because his order got forgotten by the kitchen.
 
-## Maintainability
+### Maintainability
 
 > [!info] Definition
 > A system is **maintainable** when many people can work productively on the system.

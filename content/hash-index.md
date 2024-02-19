@@ -21,16 +21,16 @@ This allows us to achieve amortized $O(1)$ time with lookups in this hash table,
 > [!attention] A word on hashing
 > Because of hashing, there's no guarantee that similar keys are close to each other on disk!
 
-#### pros
+## pros
 
-- [p] Reads to the hash map are very fast, as they are in-memory and don’t require disk I/O.
+- Reads to the hash map are very fast, as they are in-memory and don’t require disk I/O.
 
-#### cons
+## cons
 
-- [c] The hash map must be maintained in-memory, because implementing a hash map on disk requires lots of random disk I/O.
-- [c] All of our keys need to fit into memory.
-- [c] RAM is not [[durability|durable]].
-- [c] Range queries are not possible in under $O(n)$ time, because the hash map doesn’t implicitly store information about how keys are related to each other (unlike [[b-tree|b-trees]]).
+- The hash map must be maintained in-memory, because implementing a hash map on disk requires lots of random disk I/O.
+- All of our keys need to fit into memory.
+- RAM is not [[durability|durable]].
+- Range queries are not possible in under $O(n)$ time, because the hash map doesn’t implicitly store information about how keys are related to each other (unlike [[b-tree|b-trees]]).
 
 ## references
 

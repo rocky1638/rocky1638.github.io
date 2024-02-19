@@ -14,8 +14,8 @@ a database in which each node is a record and each edge is a relationship betwee
 
 ## pros
 
-- [p] useful for modeling complex relationships like social networks.
-- [p] great for [[evolvability]]; they can be easily extended to include new entities or relationships.
+- useful for modeling complex relationships like social networks.
+- great for [[evolvability]]; they can be easily extended to include new entities or relationships.
 
 ## how are graph databases structured?
 
