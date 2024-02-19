@@ -15,8 +15,10 @@ body {
   mix-blend-mode: normal;
 }
 
+// invert colors for the doodle in dark mode
 [saved-theme=dark] img[src*=doodle-garden\.png] {
   filter: invert(1);
+  -webkit-filter: invert(1);
 }
  
 // text wrapping
