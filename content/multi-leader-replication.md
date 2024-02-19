@@ -1,11 +1,10 @@
 ---
+title: "multi-leader replication"
 parents:
   - "[[database-replication]]"
 aliases:
   - master-master-replication
 ---
-
-# multi-leader replication
 
 > Also known as master-master replication.
 

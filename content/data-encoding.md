@@ -1,4 +1,5 @@
 ---
+title: "data encoding"
 created_at: 2024-01-26
 type: concept
 aliases: 
@@ -7,8 +8,6 @@ children:
 supports: 
 enemies:
 ---
-
-# data encoding
 
 At its most basic, encoding is the act of moving in-memory data to the disk or to send on the network. Conversely, decoding is moving data in a disk or from a network to in-memory data.
 

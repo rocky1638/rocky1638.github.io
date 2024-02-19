@@ -1,4 +1,5 @@
 ---
+title: "lsm tree and sstable index"
 created_at: 2024-01-26
 type: concept
 aliases: 
@@ -8,8 +9,6 @@ children:
 supports: 
 enemies:
 ---
-
-# lsm-tree and sstable index
 
 An **LSM tree**, or log-structured merge tree, is a balanced binary search tree in which each node has a key and contains a value. _(This value could be actual data or a memory address, see [[database-index#co-locating data]] for details)._
 

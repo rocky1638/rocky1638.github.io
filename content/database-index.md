@@ -1,4 +1,5 @@
 ---
+title: "database index"
 created_at: 2024-01-26
 type: concept
 aliases:
@@ -8,8 +9,6 @@ children:
 supports: 
 enemies:
 ---
-
-# database index
 
 Additional data structures that are used by [[databases]] to improve the performance of reads on a specific key value at the expense of slowing down writes.
 

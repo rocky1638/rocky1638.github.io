@@ -1,4 +1,5 @@
 ---
+title: "b-tree index"
 created_at: 2024-01-26
 type: concept
 aliases:
@@ -9,8 +10,6 @@ children:
 supports: 
 enemies:
 ---
-
-# b-tree index
 
 We store a tree in memory, in which each node of the tree is a disk **page** of fixed size.
 

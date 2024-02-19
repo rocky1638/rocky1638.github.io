@@ -1,9 +1,8 @@
 ---
+title: "database replication"
 parents:
   - "[[database]]"
 ---
-
-# database replication
 
 Database replication is the practice of keeping copies of the same data on multiple machines.
 

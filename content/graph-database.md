@@ -1,12 +1,11 @@
 ---
+title: "graph database"
 created_at: 2024-01-26
 type: concept
 aliases: 
 parents:
   - "[[nosql-database]]"
 ---
-
-# graph database
 
 a database in which each node is a record and each edge is a relationship between nodes.
 - examples include [[neo4j]] and [[flockdb]].

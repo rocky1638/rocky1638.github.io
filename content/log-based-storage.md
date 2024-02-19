@@ -1,4 +1,5 @@
 ---
+title: "log based storage"
 created_at: 2024-01-26
 type: concept
 aliases:
@@ -7,8 +8,6 @@ children:
 supports: 
 enemies:
 ---
-
-# log-based storage
 
 Stores key-value pairs in a long log file, which is appended to when any new data is added.
 

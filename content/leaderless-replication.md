@@ -1,4 +1,5 @@
 ---
+title: "leaderless replication"
 created_at: 2024-01-28
 type: concept
 aliases: 
@@ -8,8 +9,6 @@ children:
 supports: 
 enemies:
 ---
-
-# leaderless replication
 
 Leaderless replication is characterized by each node in the system being allowed to take reads and writes.
 

@@ -1,4 +1,5 @@
 ---
+title: "hash index"
 created_at: 2024-01-26
 type: concept
 aliases: 
@@ -8,8 +9,6 @@ children:
 supports: 
 enemies:
 ---
-
-# hash index
 
 ![[hash-map-diagram.png|Figure 1: A diagram of a basic hashmap.|650]]
 

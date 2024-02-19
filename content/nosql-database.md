@@ -1,12 +1,11 @@
 ---
+title: "nosql databases"
 type: concept
 parents:
   - "[[database]]"
 aliases:
   - nosql
 ---
-
-# nosql databases
 
 - data represented in a key-value store, document store, or graph database.
 - data is [[denormalization|denormalized]].

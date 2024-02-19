@@ -1,12 +1,11 @@
 ---
+title: "document database"
 created_at: 2024-01-26
 type: concept
 aliases: 
 parents:
   - "[[nosql-database]]"
 ---
-
-# document database
 
 - centered around documents such as [[json]], XML, binary, etc.
 - have apis that allow querying based on the internal structure of the documents.

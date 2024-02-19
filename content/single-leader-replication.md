@@ -1,12 +1,11 @@
 ---
+title: "single leader replication"
 parents:
   - "[[database-replication]]"
 aliases:
   - master-slave-replication
   - active-passive-replication
 ---
-
-# single-leader replication
 
 > Also known as master-slave replication, active-passive replication.
 
