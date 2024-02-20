@@ -17,8 +17,6 @@ From a high level, we can define consistency in several general buckets. They ar
 
 Strong consistency, also known as linearizability, ensures that any writes will always be seen by subsequent reads.
 
-It is only achievable through fully [[synchronous-replication]]
-
 > [!info]
 > This is difficult to achieve in distributed systems due to the tendency to use [[asynchronous-replication]] in order to maintain low latency in the system.
 
@@ -29,6 +27,8 @@ Causal consistency guarantees that rows that rely on each other will always appe
 A common guarantee that is a superset of causal consistency is **consistent prefix reads**, which ensures that all replicas will receive updates in the same **global ordering**.
 
 As such, this inconsistency can only become present in [[multi-leader-replication|multi-leader]] or [[leaderless-replication|leaderless]] systems, as having a single leader accepting writes will always ensure that there is a single consistent global ordering of writes.
+
+See [this post on Educative](https://www.educative.io/blog/causal-consistency-model#ayYuaeLZOeIZwQuC52K4E) for a diagram that demonstrates how version vectors can be used to implement causal consistency.
 
 ### eventual consistency
 

@@ -96,6 +96,11 @@ Instead, we can realize that we may not need to ensure a complete global orderin
 
 We can achieve this through the versioning of rows/keys in a database, and relying on the application to deal with any conflicting information that it receives.
 
+> [!attention]
+> Global time is impossible to achieve in a distributed system, as synchronizing multiple clocks is a very difficult problem, and impossible to achieve perfect precision on.
+>
+> As such, we don’t use timestamps, but use version numbers to propagate **logical time** instead.
+
 ![[causal-dependency-diagram.png]]
 
 1. On a read, the server returns all the not-yet overwritten values for a row/key as well as the latest version number.
