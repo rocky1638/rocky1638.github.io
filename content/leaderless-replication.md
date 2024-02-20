@@ -57,4 +57,4 @@ Another issue that can occur with strict quorums is when a network interruption 
 
 In this situation, without intervention, the client would need to wait until the network fault ended. This is why we use **sloppy quorums.**
 
-We can give up guarantees of consistency for eventual consistency but improve availability if we allow nodes that aren’t normally a part of the $n$ home nodes for a user to vote in and accept reads and writes for a client. Eventually, the data will make it back to the $n$ home nodes.
+We can give up guarantees of consistency for eventual consistency but improve availability if we allow nodes that aren’t normally a part of the $n$ home nodes for a user to vote in and accept reads and writes for a client. Eventually, the data will make it back to the $n$ home nodes, in a process called **hinted handoff.**

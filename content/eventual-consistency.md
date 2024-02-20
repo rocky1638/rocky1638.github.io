@@ -1,10 +1,9 @@
 ---
+title: "eventual consistency"
 created_at: 2022-12-31
 type: concept
 aliases: []
 ---
-
-# eventual consistency
 
 A simplified consistency heuristic that states that all nodes in a system are guaranteed to reach a consistent state after an infinite amount of time.
 

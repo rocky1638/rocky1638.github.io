@@ -80,34 +80,24 @@ Then, in the context of multi-leader and leaderless replication, the author disc
 
 ### consistency guarantees
 
-- read-your-writes / read-after-write consistency
-	- ![[read-after-write-consistency-diagram.png]]
-	- a user will always see writes submitted by themselves.
-		- many strategies for this
-			- user reads from leader for 1 minute after latest submitted update
-			- user only reads from followers <1minute behind leader
-			- read data only changeable by the user from leader
-- monotonic reads
-	- ![[monotonic-reads-diagram.png]]
-	- don’t want to move backwards in time
-	- stronger than eventual consistency
-		- user always reads from one replica - what happens if the replica fails?
-- consistent prefix reads
-	- this issue only happens once partitioning/sharding is done
-	- with only one leader there is a consistent global ordering
+When we asynchronously replicate data, we naturally introduce the opportunity for data to become out-of-sync, or *inconsistent*.
+
+See [[consistency-patterns]].
 
 ### conflict resolution
 
-- concurrent writes
-	- ![[concurrent-writes-diagram.png]]
-		- last write wins
-			- [c] loss of durability as some writes may be discarded silently
-		- how to keep track of causal dependencies?
-			- ![[causal-dependency-diagram.png]]
-			- version each key
-				- on read, server returns all values not yet overwritten and latest version number for key
-					- application must perform merge/conflict resolution of varying versions received here
-				- on write, client includes version number of prior read
-				- db can overwrite all values of key with version number of prior read and below
-				- in leaderless:
-					- use version vector, where each value has a version for each replica
+When we have concurrent writes to multiple leaders, there is no single consistent ordering of the writes, and so we must perform conflict resolution if we don’t want to end up in an inconsistent state.
+
+![[concurrent-writes-diagram.png]]
+
+A simple idea is to use the concept of last-write-wins, but then there is a chance that we lose durability as some writes may be silently discarded if a newer write comes in.
+
+Instead, we can realize that we may not need to ensure a complete global ordering, but just that we don’t mess up any **causal dependencies.** This means that we can achieve [[consistency-patterns#causal consistency|causal consistency]] without needing to ensure that all replicas process writes in the exact same order.
+
+We can achieve this through the versioning of rows/keys in a database, and relying on the application to deal with any conflicting information that it receives.
+
+![[causal-dependency-diagram.png]]
+
+1. On a read, the server returns all the not-yet overwritten values for a row/key as well as the latest version number.
+2. The application performs merge/conflict logic to resolve any varying versions.
+3. The application submits the merged data with the version number it previously received, and the database can now overwrite all prior versions of the row/key.
