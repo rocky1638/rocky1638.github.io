@@ -39,3 +39,7 @@ p, ul, text, a, tr, td, li, ol, ul {
 .content-meta, p.meta {
   font-family: "Caveat";
 }
+				
+figure[data-rehype-pretty-code-figure] > pre { 
+  tab-size: 2;
+}

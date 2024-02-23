@@ -2,7 +2,6 @@
 title: 430. flatten a multilevel doubly linked list
 tags:
   - linked-list
-  - recursion
   - dfs
 ---
 
@@ -28,7 +27,7 @@ class Solution:
 					tail.next = n
 					
 					if n:
-							n.prev = tail
+						n.prev = tail
 					else:
 						# we want to return tail instead of recursing on node.next
 						# if node.next is None (if we're at the end of the level)
