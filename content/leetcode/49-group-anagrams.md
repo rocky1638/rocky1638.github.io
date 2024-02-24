@@ -10,6 +10,7 @@ tags:
   - hashmap
   - string
   - sorting
+updated: 2024-02-24
 ---
 
 Given an array of strings `strs`, group **the anagrams** together. You can return the answer in **any order**.
@@ -28,5 +29,5 @@ class Solution:
     return d.values()
 ```
 
-- use a [[hashmap]] and group the strings by sorted values.
+- use a hashmap and group the strings by sorted values.
 - just return the groupings at the end.
