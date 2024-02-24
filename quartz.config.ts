@@ -13,7 +13,7 @@ const config: QuartzConfig = {
     locale: "en-US",
     baseUrl: "garden.rockzhou.com",
     ignorePatterns: ["private", "templates", ".obsidian", "excalibrain"],
-    defaultDateType: "modified",
+    defaultDateType: "created",
     theme: {
       cdnCaching: true,
       typography: {
@@ -54,7 +54,7 @@ const config: QuartzConfig = {
       Plugin.CreatedModifiedDate({
         // you can add 'git' here for last modified from Git
         // if you do rely on git for dates, ensure defaultDateType is 'modified'
-        priority: ["frontmatter", "git", "filesystem"],
+        priority: ["frontmatter", "filesystem"],
       }),
       Plugin.Latex({ renderEngine: "katex" }),
       Plugin.SyntaxHighlighting({
