@@ -15,7 +15,7 @@ You are given an integer array `nums`. You are initially positioned at the arra
 
 Return `true` _if you can reach the last index, or_ `false` _otherwise_.
 
-## top-down recursion w/ memoization (tle).
+## top-down recursion w/ memoization (tle)
 
 ```python
 class Solution:
@@ -38,7 +38,7 @@ class Solution:
 
 - we use backtracking while also using memoization to store if an index can reach the end of the array.
 
-## bottom-up dynamic programming.
+## bottom-up dynamic programming
 
 ```python
 class Solution:

@@ -1,8 +1,9 @@
 ---
-created_at: 2022-11-26
 type: moc
 aliases: []
 title: "system design moc"
+date: 2022-11-26
+updated: 2024-02-26
 ---
 
 ## book and course notes
@@ -12,14 +13,19 @@ title: "system design moc"
 - [[system-design-interview-an-insiders-guide-by-alex-yu]] - A lightweight overview of system design concepts, more focused on practical interview topics.
 - [[cs75-scalability-lecture]] - An intro lecture to scalability.
 
-## interview questions
+## interviews
 
-- [[rate-limiter]].
-- [[url-shortener]] (like TinyUrl or Pastebin).
-- [[distributed-unique-id-generator]] (like [Twitter Snowflake](https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake)).
-- [[web-crawler]].
-- [[notification-system]].
-- ticketing system (like Ticketmaster or BookMyShow).
-- hotel booking system (like Booking or Airbnb).
-- [[news-feed-system]] in a social media platform.
-- [[chat-system]].
+![Steps to take during a system design interview](https://github.com/ashishps1/awesome-system-design-resources/raw/main/diagrams/interview-template.png)
+
+1. Ask initial questions to get a gauge of scale, usage, etc.
+2. List out some functional requirements to get buy-in from interviewer.
+3. List out some high-level non-functional requirements *(availability, r/w priority).*
+4. Do back-of-envelope estimations when they’re necessary to inform a decision.
+5. Think about high-level API requirements to guide your thoughts.
+	- What HTTP requests will a user realistically need to hit?
+6. Think about a couple database tables that are relevant to the solution.
+7. Sketch out a high-level system design, that can cover the main non-functional components, making sure to justify decisions and only add details when necessary!
+8. Dive into one or two key components/specifics that you feel more comfortable with.
+9. Address fault-tolerance and scalability at the end.
+
+See [[system-design-interview-questions]] for my journey in practicing these questions and giving myself feedback.
