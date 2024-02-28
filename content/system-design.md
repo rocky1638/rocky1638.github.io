@@ -28,4 +28,10 @@ updated: 2024-02-26
 8. Dive into one or two key components/specifics that you feel more comfortable with.
 9. Address fault-tolerance and scalability at the end.
 
+**Meta tips:**
+
+- Use function call syntax (`myFunction(params)`) for API level design instead of HTTP requests.
+- Start with a naive solution, then go through functional, non-functional requirements to find where the solution breaks down.
+- Treat interviewer as a coworker with which you are working with.
+
 See [[system-design-interview-questions]] for my journey in practicing these questions and giving myself feedback.

@@ -1,12 +1,13 @@
 ---
 type: moc
-title: "system design interview questions"
-tags:
+title: system design interview questions
+tags: 
 aliases: 
-parents: 
+parents:
+  - "[[55-jump-game]]"
 children: 
 supports: 
-enemies:
+enemies: 
 date: 2022-12-30
 updated: 2024-02-26
 ---
@@ -19,7 +20,7 @@ Sourced from [here](https://github.com/ashishps1/awesome-system-design-resources
 
 ### easy
 
-- [Design Leaderboard](https://systemdesign.one/leaderboard-system-design/)
+- [[design-leaderboard]]
 - [Design URL Shortener like TinyURL](https://www.youtube.com/watch?v=fMZMm_0ZhK4)
 - [Design Text Storage Service like Pastebin](https://www.youtube.com/watch?v=josjRSBqEBI)
 - [Design Content Delivery Network (CDN)](https://www.youtube.com/watch?v=8zX0rue2Hic)
