@@ -9,7 +9,7 @@ children:
 supports: 
 enemies: 
 date: 2022-12-30
-updated: 2024-02-26
+updated: 2024-03-02
 ---
 
 ## interview questions
@@ -21,16 +21,16 @@ Sourced from [here](https://github.com/ashishps1/awesome-system-design-resources
 ### easy
 
 - [[design-leaderboard]]
-- [Design URL Shortener like TinyURL](https://www.youtube.com/watch?v=fMZMm_0ZhK4)
-- [Design Text Storage Service like Pastebin](https://www.youtube.com/watch?v=josjRSBqEBI)
-- [Design Content Delivery Network (CDN)](https://www.youtube.com/watch?v=8zX0rue2Hic)
-- [Design Parking Garage](https://www.youtube.com/watch?v=NtMvNh0WFVM)
+- [[design-url-shortener]]
+- [[design-content-delivery-network]]
+- [[design-parking-garage]]
 - [Design Vending Machine](https://www.youtube.com/watch?v=D0kDMUgo27c)
 - [Design Distributed Key-Value Store](https://www.youtube.com/watch?v=rnZmdmlR-2M)
 - [Design Distributed Cache](https://www.youtube.com/watch?v=iuqZvajTOyA)
 - [Design Distributed Job Scheduler](https://towardsdatascience.com/ace-the-system-design-interview-job-scheduling-system-b25693817950)
 - [Design Authentication System](https://www.youtube.com/watch?v=uj_4vxm9u90)
 - [Design Unified Payments Interface (UPI)](https://www.youtube.com/watch?v=QpLy0_c_RXk)
+- [Design Text Storage Service like Pastebin](https://www.youtube.com/watch?v=josjRSBqEBI)
 
 ### medium
 
@@ -84,7 +84,6 @@ These are questions that I loosely practiced a couple of years ago in 2021. Howe
 Leaving them here for now for posterity.
 
 - [[rate-limiter]].
-- [[url-shortener]] (like TinyUrl or Pastebin).
 - [[distributed-unique-id-generator]] (like [Twitter Snowflake](https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake)).
 - [[web-crawler]].
 - [[notification-system]].

@@ -1,12 +1,13 @@
 ---
+title: "database sharding"
 created_at: 2022-11-27
 type: concept
 aliases: [sharding]
+date: 2022-11-27
+updated: 2024-03-03
 ---
 
-# Database Sharding
-
-## General ideas.
+## general ideas
 
 - distribute data across multiple databases through some heuristic that splits data evenly.
 	- sometimes based on user ids, last names, or geographical location.
@@ -19,49 +20,44 @@ aliases: [sharding]
 	- joining data is more complex.
 	- adds more hardware.
 
-## Different ways to partition.
+## different ways to partition
 
-### Range partitioning.
+### range partitioning
 
 ![[sharding.png]]
 - split up the data based on the range of some field.
 
-#### Advantages.
+#### advantages
 
 - easy implementation.
 - range queries are fast when all the data is in a single node.
 - ranges can be adjusted with only two nodes needing to be involved.
 
-#### Disadvantages.
+#### disadvantages
 
 - can’t perform range queries with a key other than the one used to partition.
 - can have uneven distribution in traffic based on which key was used to partition.
 
-### Hash partitioning.
+### hash partitioning
 
 ![[sharding-hash.png]]
 - apply a hash function to an attribute to determine which partition a piece of data goes into.
 - we do this for every new record, and use the same hashing function to find out where to find an existing record.
 	- we hash the value in the attribute, then do $\mod n$ where $n$ is the number of nodes we have.
-- this method can be improved with [[consistent-hashing]].
+- this method can be improved with consistent hashing.
 
-#### Advantages.
+#### advantages
 
 - partition mapping can be calculated at runtime.
 - greater chance then range partitioning for the nodes to be distributed evenly.
 
-#### Disadvantages.
+#### disadvantages
 
 - can’t perform range queries at all without storing additional data.
 - adding or removing nodes causes repartitioning across all nodes in the system.
-- [[consistent-hashing]].
+- consistent hashing.
 	- adding or removing nodes only affects neighboring nodes on the ring.
 
-```dataview
-table without id file.inlinks as Backlinks
-where file.name = this.file.name
-```
+## references
 
-## References.
-
-Categories:: [[database]]
+- https://instagram-engineering.com/sharding-ids-at-instagram-1cf5a71e5a5c

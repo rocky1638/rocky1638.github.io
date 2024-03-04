@@ -3,7 +3,7 @@ type: moc
 aliases: []
 title: "system design moc"
 date: 2022-11-26
-updated: 2024-02-26
+updated: 2024-03-03
 ---
 
 ## book and course notes
@@ -30,8 +30,11 @@ updated: 2024-02-26
 
 **Meta tips:**
 
-- Use function call syntax (`myFunction(params)`) for API level design instead of HTTP requests.
 - Start with a naive solution, then go through functional, non-functional requirements to find where the solution breaks down.
+	- Iterate over your system design diagram!
+	- Only add/change things when it’s necessary!
+- Use function call syntax (`myFunction(params)`) for API level design instead of HTTP requests.
 - Treat interviewer as a coworker with which you are working with.
+- Call it out when you unsure about something!
 
 See [[system-design-interview-questions]] for my journey in practicing these questions and giving myself feedback.
