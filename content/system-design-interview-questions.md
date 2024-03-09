@@ -25,7 +25,7 @@ Sourced from [here](https://github.com/ashishps1/awesome-system-design-resources
 - [[design-content-delivery-network]]
 - [[design-parking-garage]]
 - [[design-vending-machine]]
-- [Design Distributed Key-Value Store](https://www.youtube.com/watch?v=rnZmdmlR-2M)
+- [[design-distributed-key-value-store]]
 - [Design Distributed Cache](https://www.youtube.com/watch?v=iuqZvajTOyA)
 - [Design Distributed Job Scheduler](https://towardsdatascience.com/ace-the-system-design-interview-job-scheduling-system-b25693817950)
 - [Design Authentication System](https://www.youtube.com/watch?v=uj_4vxm9u90)
