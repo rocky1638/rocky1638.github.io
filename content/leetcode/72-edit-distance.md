@@ -1,6 +1,6 @@
 ---
 type: <% tp.file.cursor() %>
-title: <% tp.file.cursor() %>
+title: "72. edit distance"
 tags:
   - two-pointer
   - dp
@@ -11,7 +11,7 @@ children:
 supports: 
 enemies: 
 date: 2022-12-30
-updated: 2024-03-13
+updated: 2024-03-15
 ---
 
 Given two strings `word1` and `word2`, return _the minimum number of operations required to convert `word1` to `word2`_.
