@@ -3,7 +3,7 @@ type: moc
 aliases: []
 title: "system design moc"
 date: 2022-11-26
-updated: 2024-03-03
+updated: 2024-03-12
 ---
 
 ## book and course notes
@@ -33,8 +33,11 @@ updated: 2024-03-03
 - Start with a naive solution, then go through functional, non-functional requirements to find where the solution breaks down.
 	- Iterate over your system design diagram!
 	- Only add/change things when it’s necessary!
-- Use function call syntax (`myFunction(params)`) for API level design instead of HTTP requests.
+- Tips for defining non-functional requirements.
+	- Think about scalability, availability/consistency, and performance, and maybe durability if data persistence is required.
 - Treat interviewer as a coworker with which you are working with.
+	- Provide maximum number of positive data points!
 - Call it out when you unsure about something!
+- Use function call syntax (`myFunction(params)`) for API level design instead of HTTP requests.
 
 See [[system-design-interview-questions]] for my journey in practicing these questions and giving myself feedback.
