@@ -6,7 +6,7 @@ difficulty: 🔴
 needs_review: true
 link: https://leetcode.com/problems/largest-rectangle-in-histogram/
 date: 2022-11-25
-updated: 2024-03-14
+updated: 2024-03-15
 tags:
   - array
   - monotonic-stack
@@ -21,9 +21,11 @@ The intuition here is that the largest rectangle that we can make will be the he
 For example, this is the largest value rectangle that uses the second-last bar of height 2.
 
 ![[84-largest-rectangle-in-histogram-e1.png]]
+
 Note that we can’t extend the bar left anymore, as $1 \lt 2$ and would make the rectangle invalid.
 
 ![[84-largest-rectangle-in-histogram-e2.png]]
+
 So, we know that when using a bar of height $n$, the rectangle that uses it can only extend left until it meets a bar that is shorter. Without loss of generality, this applies to the right as well.
 
 This gives us an intuition for how to solve this problem. We will try to find the largest rectangle that we can draw using each bar $b_i$. When we encounter a shorter bar as we iterate from left to right, we know that the previous bars that are taller must now end, and we calculate the area that we amassed.
