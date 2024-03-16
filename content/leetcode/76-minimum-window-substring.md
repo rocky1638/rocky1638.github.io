@@ -1,12 +1,28 @@
 ---
-created_at: 2022-11-24
 type: leetcode
-aliases: []
+title: 76. minimum window substring
+aliases: 
 difficulty: 🔴
 link: https://leetcode.com/problems/minimum-window-substring/
+date: 2022-11-24
+updated: 2024-03-16
+tags:
+  - sliding-window
+  - hashmap
+  - string
 ---
 
-# 76. Minimum Window Substring
+Given two strings `s` and `t` of lengths `m` and `n` respectively, return _the **minimum window _substring_** _of_ `s` _such that every character in_ `t` _(**including duplicates**) is included in the window_. If there is no such substring, return _the empty string_ `""`.
+
+The testcases will be generated such that the answer is **unique**.
+
+## solution
+
+### sliding window with two hashmaps
+
+This is a classic [[sliding-window]] approach using [[frequency-map]].
+
+We slide our right pointer over until we have a valid string, then try to shrink our window until it is invalid again.
 
 ```python
 class Solution:
@@ -31,7 +47,39 @@ class Solution:
         return ans
 ```
 
-- classic [[sliding-window]] approach using [[frequency-map]].
-- we slide our right pointer over until we have a valid string, then try to shrink our window until it is invalid again.
+### sliding window with $O(1)$ validation
 
-Categories:: [[sliding-window]], [[frequency-map]], [[hashmap]], [[string]]
+The main optimization here is that instead of keeping two hashmaps and comparing them against each other, we just keep a single value that tracks how many unique letters we’ve matched.
+
+We then simply have to make sure that the number of `matched` is equal to the number of unique letters in `t`.
+
+```python
+def minWindow(self, s: str, t: str) -> str:
+	if len(t) > len(s):
+	return ""
+	  
+	tc = Counter(t)
+	matched = 0
+	  
+	ans = ""
+	best_len = float("inf")
+	l = 0
+	for r in range(len(s)):
+		wc[s[r]] += 1
+		if wc[s[r]] == tc[s[r]]:
+			matched += 1
+	
+		# while we've matched all the distinct
+		# chars in t
+		while matched == len(tc):
+			if r-l+1 < best_len:
+				best_len = r-l+1
+				ans = s[l:r+1]
+		
+			wc[s[l]] -= 1
+			if wc[s[l]] < tc[s[l]]:
+				matched -= 1
+			l += 1
+	
+	return ans
+```
