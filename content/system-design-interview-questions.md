@@ -27,7 +27,7 @@ Sourced from [here](https://github.com/ashishps1/awesome-system-design-resources
 - [[design-vending-machine]]
 - [[design-distributed-key-value-store]]
 - [[design-distributed-cache]]
-- [Design Distributed Job Scheduler](https://towardsdatascience.com/ace-the-system-design-interview-job-scheduling-system-b25693817950)
+- [[design-distributed-job-scheduler]]
 - [Design Authentication System](https://www.youtube.com/watch?v=uj_4vxm9u90)
 - [Design Unified Payments Interface (UPI)](https://www.youtube.com/watch?v=QpLy0_c_RXk)
 - [Design Text Storage Service like Pastebin](https://www.youtube.com/watch?v=josjRSBqEBI)
