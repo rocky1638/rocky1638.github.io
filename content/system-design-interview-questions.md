@@ -9,7 +9,7 @@ children:
 supports: 
 enemies: 
 date: 2022-12-30
-updated: 2024-03-02
+updated: 2024-03-20
 ---
 
 ## interview questions
@@ -28,7 +28,7 @@ Sourced from [here](https://github.com/ashishps1/awesome-system-design-resources
 - [[design-distributed-key-value-store]]
 - [[design-distributed-cache]]
 - [[design-distributed-job-scheduler]]
-- [Design Authentication System](https://www.youtube.com/watch?v=uj_4vxm9u90)
+- [[design-authentication-system]]
 - [Design Unified Payments Interface (UPI)](https://www.youtube.com/watch?v=QpLy0_c_RXk)
 - [Design Text Storage Service like Pastebin](https://www.youtube.com/watch?v=josjRSBqEBI)
 

@@ -1,12 +1,16 @@
 ---
-created_at: 2023-01-01
+title: "73. set matrix zeroes"
 type: leetcode
 aliases: []
 difficulty: 🟡
 link: https://leetcode.com/problems/set-matrix-zeroes/
+date: 2023-01-01
+updated: 2024-03-24
 ---
 
-# 73 Set Matrix Zeroes
+We use a sentinel value to mark values as being cleared in place.
+
+We also use sets to keep track of rows/columns that we’ve already cleared so we don’t repeat operations.
 
 ```python
 class Solution:
@@ -41,17 +45,3 @@ class Solution:
                 if matrix[i][j] is None:
                     matrix[i][j] = 0
 ```
-
-- we use a sentinel value to mark values as being cleared in place.
-- we also use sets to keep track of rows/columns that we’ve already cleared so we don’t repeat operations.
-
-```dataview
-table without id file.inlinks as Backlinks
-where file.name = this.file.name
-```
-
-## Related.
-
-## References.
-
-Categories:: [[matrix]]

@@ -1,12 +1,22 @@
 ---
-created_at: 2022-11-21
+title: 54. spiral matrix
 type: leetcode
-aliases: []
+aliases: 
 difficulty: 🟡
 link: https://leetcode.com/problems/spiral-matrix/
+date: 2022-11-22
+updated: 2024-03-23
+tags:
+  - geometry
 ---
 
-# 54. Spiral Matrix
+Given an `m x n` `matrix`, return _all elements of the_ `matrix` _in spiral order_.
+
+## solution
+
+We keep track of which direction we’re moving in, and turn the next direction when we hit the edge of the matrix or some cell that we’ve already added to `output`.
+
+To know what we’ve already seen, we can either use a `seen` set which uses $O(mn)$ space, or just modify the matrix in-place after we add a value to the `output` array.
 
 ```python
 class Solution:
@@ -34,7 +44,3 @@ class Solution:
         
         return ans
 ```
-
-- some basic but annoying [[matrix]] logic.
-
-Categories:: [[array]], [[matrix]]
